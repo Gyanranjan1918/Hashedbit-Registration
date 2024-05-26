@@ -6,6 +6,7 @@ function App() {
     name: "",
     email: "",
     password: "",
+    nickname:"",
     gender: "",
     address: "",
   };
@@ -55,6 +56,15 @@ function App() {
           type="password"
           placeholder="Enter Your Password"
           name="password"
+          value={inputData.password}
+          onChange={handleData}
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          placeholder="Enter Your nickname"
+          name="nickname"
           value={inputData.password}
           onChange={handleData}
         />
